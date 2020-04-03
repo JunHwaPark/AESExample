@@ -20,7 +20,7 @@ public class TestActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         textView2 = findViewById(R.id.textView2);
         try {
-            String encrypted = Aes.encrypt(Aes.hexToByteArray("0f000101000000000000000000000000"));
+            String encrypted = Aes.encrypt(Aes.hexToByteArray("0b000101000000000000000000000000"));
             textView.setText(encrypted);
             textView2.setText(Aes.decrypt(Aes.hexToByteArray(encrypted)));
         } catch (Exception e) {
